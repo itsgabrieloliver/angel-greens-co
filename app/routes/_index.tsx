@@ -21,7 +21,7 @@ export default function Index() {
             <div className={'h-[25rem] w-full flex flex-col gap-20 items-center justify-center'}>
                 <h3 className={'text-2xl font-bold text-[#4E8068] drop-shadow-2xl'}>Featured Greens</h3>
                 <div className={'w-full h-auto flex items-center justify-center gap-4'}>
-                    <a href={'/greens/summer-salad'} class={'basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl flex flex-col items-center'}>
+                    <a href={'/greens/summer-salad'} className={'basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl flex flex-col items-center'}>
                         <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${tempProductPhoto})` }}>
 
                         </div>
@@ -69,7 +69,7 @@ export default function Index() {
                             <p>Organically grown in South Windsor, CT</p>
                         </div>
                         <div className={'flex gap-6 items-center justify-start'}>
-                            <icon class={'w-6 h-6 bg-cover bg-center'} style={{ backgroundImage: `url(${sprayCanIcon})` }}></icon>
+                            <icon className={'w-6 h-6 bg-cover bg-center'} style={{ backgroundImage: `url(${sprayCanIcon})` }}></icon>
                             <p>Eco-friendly and thorough sterilization methods</p>
                         </div>
                         <div className={'flex gap-6 items-center justify-start'}>
