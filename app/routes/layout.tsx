@@ -50,17 +50,17 @@ const Layout: FC = ({ children }) => {
                     </nav>
                 </header>
                     :<nav className={'w-full min-h-[5rem] bg-[#4E8068]'}>
-                        <ul className={'h-full px-4 flex justify-center items-center'}>
-                            <li className={'basis-1/4 flex justify-start items-center'}>
+                        <ul className={'h-full px-10 flex justify-between md:justify-center items-center'}>
+                            <li className={'basis-1/4 hidden md:flex justify-start items-center'}>
                                 <a href="/" className={'uppercase text-sm font-bold text-white'}>Angel Greens Co</a>
                             </li>
-                            <li className={'basis-1/2 flex items-center justify-center gap-4 text-sm font-medium'}>
+                            <li className={'basis-1/2 flex items-center justify-center gap-4 text-sm font-medium uppercase'}>
                                 <a href="/" className={currentUrl === '/' ? 'text-white' : 'text-white/60 hover:text-white/80'}>Home</a>
                                 <a href="/greens" className={currentUrl === '/greens' ? 'text-white' : 'text-white/60 hover:text-white/80'}>Greens</a>
                                 <a href="/about" className={currentUrl === '/about' ? 'text-white' : 'text-white/60 hover:text-white/80'}>About</a>
                             </li>
-                            <li className={'basis-1/4 flex justify-end items-center'}>
-                                <a href="/" className={'uppercase text-sm font-bold text-white'}>Contact</a>
+                            <li className={'basis-1/2 md:basis-1/4 flex justify-end items-center'}>
+                                <a href="/" className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
                             </li>
                         </ul>
                     </nav>
