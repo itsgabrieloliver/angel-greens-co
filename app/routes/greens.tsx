@@ -3,11 +3,6 @@ import Layout from "~/routes/layout"
 
 import tempProductPhoto from '../../public/temp-product-photo.svg'
 
-import sprayCanIcon from '../../public/icons/spray-can-solid.svg'
-import seedlingIcon from '../../public/icons/seedling-solid.svg'
-import arrowsRotateIcon from '../../public/icons/arrows-rotate-solid.svg'
-import truckIcon from '../../public/icons/truck-solid.svg'
-
 export const meta: V2_MetaFunction = () => {
     return [
         { title: "AGCO | Our Greens" },
@@ -24,57 +19,57 @@ export default function Greens() {
                     <p className={'w-2/3'}>Some temporary text, this text is only temporary.</p>
                 </div>
                 <div className={'w-full p-2 flex flex-col items-center justify-center gap-8'}>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Mild Salad Mix</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Spicy Salad Mix</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Broccoli</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Dun Pea Shoots</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Arugula</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Purple Rambo Radish</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
                         <div className={'rounded-lg h-full w-[15rem] bg-cover bg-center'} style={{ backgroundImage: `url(${tempProductPhoto})` }}></div>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Wheat Grass</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
                     </div>
-                    <div className={'rounded-xl w-full md:w-1/3 h-[12rem] bg-[#2D240E] flex p-1'}>
-                        <div className={'w-auto px-2 flex flex-col gap-4 items-center justify-center'}>
+                    <div className={'rounded-xl w-full md:w-2/3 h-[12rem] bg-[#2D240E] flex p-1'}>
+                        <div className={'w-full px-2 flex flex-col gap-4 items-center justify-center'}>
                             <p className={'text-white text-xl uppercase font-bold'}>Cilantro</p>
                             <p className={'text-sm text-white/80 text-center'}>Some temporary text, this text is only temporary.</p>
                         </div>
