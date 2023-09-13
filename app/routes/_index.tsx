@@ -74,7 +74,7 @@ export default function Index() {
                         </div>
                         <div className={'flex gap-6 items-center justify-start'}>
                             <icon className={'w-6 h-6 bg-cover bg-center'} style={{backgroundImage: `url(${arrowsRotateIcon})`}}></icon>
-                            <p>Consistent quality and friendliness</p>
+                            <p>Consistent quality and freshness</p>
                         </div>
                         <div className={'flex gap-6 items-center justify-start'}>
                             <icon className={'w-6 h-6 bg-cover bg-center'} style={{backgroundImage: `url(${truckIcon})`}}></icon>
@@ -86,11 +86,11 @@ export default function Index() {
                     <h3 className={'text-2xl font-bold text-[#2D240E] drop-shadow-2xl'}>Pricing Model</h3>
                     <div className={'flex gap-4 items-end justify-center'}>
                         <div className={'rounded-xl bg-[#4E8068] w-[8rem] h-[10rem] flex flex-col items-center justify-center'}>
-                            <h4 className={'text-2xl text-white font-bold'}>2 OZ</h4>
-                            <h5 className={'text-lg text-white/80'}>$8.00</h5>
+                            <h4 className={'text-2xl text-white font-bold'}>1 OZ</h4>
+                            <h5 className={'text-lg text-white/80'}>$5.00</h5>
                         </div>
                         <div className={'rounded-xl bg-[#4E8068] w-[8rem] h-[13rem] flex flex-col items-center justify-center'}>
-                            <h4 className={'text-2xl text-white font-bold'}>4 OZ</h4>
+                            <h4 className={'text-2xl text-white font-bold'}>2 OZ</h4>
                             <h5 className={'text-lg text-white/80'}>$10.00</h5>
                         </div>
                     </div>
