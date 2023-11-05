@@ -6,6 +6,20 @@ import bgImage from '../../public/bg-image.jpg'
 import AGCOLogo from '../../public/agco-logo.svg'
 import instagramLogo from '../../public/icons/instagram.svg'
 import facebookLogo from '../../public/icons/facebook.svg'
+import { Resend } from 'resend'
+import { Form, useActionData } from "@remix-run/react";
+import type { ActionFunctionArgs } from "@remix-run/node";
+import Instagram from 'instagram-web-api'
+
+export let action: ActionFunctionArgs = async ({ request }) => {
+    let formData = await request.formData()
+    let name = formData.get('name')
+    let email = formData.get('email')
+    let phone = formData.get('phone')
+
+    console.log('tetst')
+    return {ok: true}
+}
 
 const Layout: FC = ({ children }) => {
     // Retrieve location header object.
@@ -28,7 +42,7 @@ const Layout: FC = ({ children }) => {
                                 <a href="/about" className={currentUrl === '/about' ? 'text-white' : 'text-white/60 hover:text-white/80'}>About</a>
                             </li>
                             <li className={'basis-1/2 md:basis-1/4 flex justify-end items-center'}>
-                                <a href="/" className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
+                                <a href="mailto:order@angelgreens.co" className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
                             </li>
                         </ul>
                         <div className={'h-[35rem] w-full flex items-center justify-center'}>
@@ -37,15 +51,15 @@ const Layout: FC = ({ children }) => {
                                 <h1 className={'uppercase font-bold text-3xl text-white'}>Angel Greens CO.</h1>
                                 <p className={'mt-4 w-3/4 md:w-3/5 text-center text-2xl text-white'}>Color your dish, enhance your flavor, and support your health.</p>
                             </div>
-                            <div className={'hidden md:block md:basis-1/2 h-full w-full px-4 xl:px-48 py-12'}>
-                                <form className={'w-full h-full bg-white/60 rounded-xl ring-1 ring-white flex flex-col gap-4 items-center justify-center p-6'}>
-                                    <p className={'text-2xl text-[#1B1516] font-bold'}>Get In Touch</p>
-                                    <input required type={'text'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Your Name'} />
-                                    <input required type={'email'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Email Address'} />
-                                    <input required className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Phone Number'} />
-                                    <input type={'submit'} className={'px-6 py-1 bg-[#4E8068] rounded-md text-white cursor-pointer uppercase'} />
-                                </form>
-                            </div>
+                            {/*<div className={'hidden md:block md:basis-1/2 h-full w-full px-4 xl:px-48 py-12'}>*/}
+                            {/*    <Form method={'post'} className={'w-full h-full bg-white/60 rounded-xl ring-1 ring-white flex flex-col gap-4 items-center justify-center p-6'}>*/}
+                            {/*        <p className={'text-2xl text-[#1B1516] font-bold'}>Order Greens</p>*/}
+                            {/*        <input required type={'text'} name={'name'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Your Name'} />*/}
+                            {/*        <input required type={'email'} name={'email'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Email Address'} />*/}
+                            {/*        <input type={'text'} name={'phone'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Phone Number'} />*/}
+                            {/*        <input type={'submit'} className={'px-6 py-1 bg-[#4E8068] rounded-md text-white cursor-pointer uppercase'} />*/}
+                            {/*    </Form>*/}
+                            {/*</div>*/}
                         </div>
                     </nav>
                 </header>
@@ -72,7 +86,7 @@ const Layout: FC = ({ children }) => {
 
             <footer>
                 <div className={'h-auto md:h-[15rem] bg-[#4E8068] flex flex-col md:flex-row'}>
-                    <div className={'h-full basis-1/3 flex flex-col justify-between items-start p-8'}>
+                    <div className={'h-full basis-2/3 flex flex-col justify-between items-start p-8'}>
                         <h2 className={'uppercase text-2xl text-white'}>Angel Greens Co.</h2>
                         <div className={'flex flex-col'}>
                             <p className={'text-lg text-white/80'}>order@angelgreens.co</p>
@@ -87,11 +101,11 @@ const Layout: FC = ({ children }) => {
                             </a>
                         </div>
                     </div>
-                    <div className={'h-[10rem] md:h-full basis-1/3 p-8'}>
-                        <div className={'w-full h-full rounded-xl ring-2 ring-white bg-gradient-to-tr from-pink-500 to-blue-500 flex items-center justify-center text-white'}>
-                            Instagram Feed Here
-                        </div>
-                    </div>
+                    {/*<div className={'h-[10rem] md:h-full basis-1/3 p-8'}>*/}
+                    {/*    <div className={'w-full h-full rounded-xl ring-2 ring-white bg-gradient-to-tr from-pink-500 to-blue-500 flex items-center justify-center text-white'}>*/}
+                    {/*        Instagram Feed Here*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className={'h-full basis-1/3 flex flex-col items-end justify-between p-8'}>
                         <div className={'flex flex-col items-end justify-start'}>
                             <h2 className={'uppercase text-2xl text-white'}>We Accept</h2>
