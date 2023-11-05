@@ -1,7 +1,9 @@
 import type { V2_MetaFunction } from '@remix-run/node'
 import Layout from "~/routes/layout"
 
-import tempProductPhoto from '../../public/temp-product-photo.svg'
+import spicySaladMixPhoto from '../../public/product-photos/spicy-salad-mix-photo.jpg'
+import broccoliPhoto from '../../public/product-photos/broccoli-photo.jpg'
+import mildSaladMixPhoto from '../../public/product-photos/mild-salad-mix-photo.jpeg'
 
 import sprayCanIcon from '../../public/icons/spray-can-solid.svg'
 import seedlingIcon from '../../public/icons/seedling-solid.svg'
@@ -21,24 +23,24 @@ export default function Index() {
             <div className={'h-[25rem] w-full flex flex-col gap-20 items-center justify-center'}>
                 <h3 className={'text-2xl font-bold text-[#4E8068] drop-shadow-2xl'}>Featured Greens</h3>
                 <div className={'w-full h-auto flex items-center justify-center gap-4'}>
-                    <a href={'/greens/summer-salad'} className={'basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl flex flex-col items-center'}>
-                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${tempProductPhoto})` }}>
+                    <a href={'/greens'} className={'basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl flex flex-col items-center'}>
+                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${spicySaladMixPhoto})` }}>
 
                         </div>
-                        <p className={'text-white text-2xl font-bold p-4'}>Summer Salad Mix</p>
+                        <p className={'text-white text-2xl font-bold p-4'}>Spicy Salad Mix</p>
                     </a>
-                    <a href={'/greens/summer-salad'} className={'hidden md:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl md:flex md:flex-col md:items-center'}>
-                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${tempProductPhoto})` }}>
+                    <a href={'/greens'} className={'hidden md:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl md:flex md:flex-col md:items-center'}>
+                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${broccoliPhoto})` }}>
 
                         </div>
-                        <p className={'text-white text-2xl font-bold p-4'}>Summer Salad Mix</p>
+                        <p className={'text-white text-2xl font-bold p-4'}>Broccoli</p>
 
                     </a>
-                    <a href={'/greens/summer-salad'} className={'hidden xl:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl xl:flex xl:flex-col xl:items-center'}>
-                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${tempProductPhoto})` }}>
+                    <a href={'/greens'} className={'hidden xl:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl xl:flex xl:flex-col xl:items-center'}>
+                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${mildSaladMixPhoto})` }}>
 
                         </div>
-                        <p className={'text-white text-2xl font-bold p-4'}>Summer Salad Mix</p>
+                        <p className={'text-white text-2xl font-bold p-4'}>Mild Salad Mix</p>
                     </a>
                 </div>
                 <a href={'/greens'} className={'-mt-12 font-bold text-black/60 hover:text-black/80'}>View All Greens</a>
@@ -55,8 +57,8 @@ export default function Index() {
                         <p className={'text-center text-md text-black/60'}>Setup a convenient time for your delivery, we will make it happen.</p>
                     </div>
                     <div className={'w-[20rem] h-[15rem] bg-white rounded-xl flex flex-col items-center justify-center gap-8 p-4'}>
-                        <h4 className={'text-xl font-bold tracking-wide'}>Review Our Recipes</h4>
-                        <p className={'text-center text-md text-black/60'}>View our amazing catalog of quick and delicious meals.</p>
+                        <h4 className={'text-xl font-bold tracking-wide'}>Join the Rotation</h4>
+                        <p className={'text-center text-md text-black/60'}>Join the rotation and receive greens weekly.</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +80,7 @@ export default function Index() {
                         </div>
                         <div className={'flex gap-6 items-center justify-start'}>
                             <icon className={'w-6 h-6 bg-cover bg-center'} style={{backgroundImage: `url(${truckIcon})`}}></icon>
-                            <p>Regular fulfillment in 1-3 weeks</p>
+                            <p>Free deliveries</p>
                         </div>
                     </div>
                 </div>
