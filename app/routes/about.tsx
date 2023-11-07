@@ -17,7 +17,7 @@ export default function About() {
         <Layout>
             <div className={'h-auto w-full flex flex-col py-12'}>
                 <div className={'h-auto w-full flex flex-col md:flex-row items-center justify-center'}>
-                    <div className={'basis-1/2 pl-12 h-auto flex flex-col gap-4 items-start justify-center text-start'}>
+                    <div className={'basis-1/2 px-4 md:pl-12 h-auto flex flex-col gap-4 items-start justify-center text-start'}>
                         <h2 className={'text-2xl font-bold'}>Our Vision</h2>
                         <p className={'w-full text-md'}>At Angel Greens Co, we envision a future where every home and community is thriving with the
                             vibrant vitality of fresh, locally grown microgreens. Our commitment is to be the beacon of
@@ -53,7 +53,7 @@ export default function About() {
                     <div className={'mt-6 md:mt-0 w-full md:w-auto md:basis-1/2 h-full px-4 md:px-32'}>
                         <div className={'w-full h-[20rem] bg-[#E8E8E8] ring-1 ring-neutral-950 rounded-xl flex items-center justify-center bg-cover bg-center'} style={{ backgroundImage: `url(${aboveShot})` }}></div>
                     </div>
-                    <div className={'basis-1/2 h-auto pr-12 flex flex-col gap-4 items-start justify-center text-start'}>
+                    <div className={'basis-1/2 h-auto px-4 md:pr-12 flex flex-col gap-4 items-start justify-center text-start'}>
                         <h2 className={'mt-6 md:mt-0 text-2xl font-bold text-left'}>We grow differently.</h2>
                         <p className={'w-full text-md'}>At Angel Greens Co, we embrace the extraordinary. We're not just another microgreen supplier;
                             we're a movement, a commitment to redefining the way you experience freshness, flavor, and
@@ -125,7 +125,7 @@ export default function About() {
 
                 <div className={'mt-24 w-full h-auto flex flex-col items-center justify-center'}>
                     <h2 className={'text-2xl font-bold'}>Photo Gallery</h2>
-                    <div className={'w-full grid grid-cols-2 grid-rows-1 gap-4 pt-6 px-4'}>
+                    <div className={'w-full grid grid-rows-1 md:grid-cols-2 grid-rows-1 gap-4 pt-6 px-4'}>
                         <div className={'rounded-xl bg-[#E8E8E8] h-[30rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${setup})` }}></div>
                         <div className={'rounded-xl bg-[#E8E8E8] h-[30rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${sideShot})` }}></div>
                         {/*<div className={'rounded-xl bg-[#E8E8E8] h-[30rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1'}>*/}
