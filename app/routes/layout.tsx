@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FormEvent, useRef, useState} from 'react'
 import type FC from 'react'
 import { useLocation } from 'react-router-dom'
 
@@ -6,20 +6,7 @@ import bgImage from '../../public/bg-image.jpg'
 import AGCOLogo from '../../public/agco-logo.svg'
 import instagramLogo from '../../public/icons/instagram.svg'
 import facebookLogo from '../../public/icons/facebook.svg'
-import { Resend } from 'resend'
-import { Form, useActionData } from "@remix-run/react";
-import type { ActionFunctionArgs } from "@remix-run/node";
-import Instagram from 'instagram-web-api'
-
-export let action: ActionFunctionArgs = async ({ request }) => {
-    let formData = await request.formData()
-    let name = formData.get('name')
-    let email = formData.get('email')
-    let phone = formData.get('phone')
-
-    console.log('tetst')
-    return {ok: true}
-}
+import { Form } from "@remix-run/react"
 
 const Layout: FC = ({ children }) => {
     // Retrieve location header object.
@@ -51,15 +38,16 @@ const Layout: FC = ({ children }) => {
                                 <h1 className={'uppercase font-bold text-3xl text-white'}>Angel Greens CO.</h1>
                                 <p className={'mt-4 w-3/4 md:w-3/5 text-center text-2xl text-white'}>Color your dish, enhance your flavor, and support your health.</p>
                             </div>
-                            {/*<div className={'hidden md:block md:basis-1/2 h-full w-full px-4 xl:px-48 py-12'}>*/}
-                            {/*    <Form method={'post'} className={'w-full h-full bg-white/60 rounded-xl ring-1 ring-white flex flex-col gap-4 items-center justify-center p-6'}>*/}
-                            {/*        <p className={'text-2xl text-[#1B1516] font-bold'}>Order Greens</p>*/}
-                            {/*        <input required type={'text'} name={'name'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Your Name'} />*/}
-                            {/*        <input required type={'email'} name={'email'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Email Address'} />*/}
-                            {/*        <input type={'text'} name={'phone'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Phone Number'} />*/}
-                            {/*        <input type={'submit'} className={'px-6 py-1 bg-[#4E8068] rounded-md text-white cursor-pointer uppercase'} />*/}
-                            {/*    </Form>*/}
-                            {/*</div>*/}
+                            <div className={'hidden md:block md:basis-1/2 h-full w-full px-4 xl:px-48 py-12'}>
+
+                                <Form method={"post"} action={"/send"} className={'w-full h-full bg-white/60 rounded-xl ring-1 ring-white flex flex-col gap-4 items-center justify-center p-6'}>
+                                    <p className={'text-2xl text-[#1B1516] font-bold'}>Order Greens</p>
+                                    <input required type={'text'} name={'name'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Your Name'} />
+                                    <input required type={'email'} name={'email'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Email Address'} />
+                                    <input type={'text'} name={'phone'} className={'h-12 w-full rounded-lg bg-white/60 ring-2 ring-[#349E6B] px-4 text-[#1B1516]'} placeholder={'Phone Number'} />
+                                    <input type={'submit'} className={'px-6 py-1 bg-[#4E8068] rounded-md text-white cursor-pointer uppercase'} />
+                                </Form>
+                            </div>
                         </div>
                     </nav>
                 </header>
@@ -120,7 +108,7 @@ const Layout: FC = ({ children }) => {
                     </div>
                 </div>
                 <div className={'h-auto w-full bg-[#1B1516] text-center py-4 font-regular text-white text-sm tracking-wide'}>
-                    Built and powered by <a href={'https://nubo.onl/'} className={'font-bold'}>Nubo</a>
+                    Built and powered by <a href={'https://www.withnubo.com/'} className={'font-bold'}>Nubo</a>
                 </div>
             </footer>
         </div>
