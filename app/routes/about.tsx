@@ -46,7 +46,7 @@ export default function About() {
                         </p>
                     </div>
                     <div className={'mt-6 md:mt-0 w-full md:w-auto md:basis-1/2 h-full px-4 md:px-32'}>
-                        <div className={'w-full h-[32rem] bg-[#E8E8E8] ring-1 ring-neutral-950 rounded-xl flex items-center justify-center bg-cover bg-center'} style={{ backgroundImage: `url(${mikeWithTray})` }}></div>
+                        <div className={'w-full h-[32rem] xl:h-[38rem] bg-[#E8E8E8] ring-1 ring-neutral-950 rounded-xl flex items-center justify-center bg-cover bg-center'} style={{ backgroundImage: `url(${mikeWithTray})` }}></div>
                     </div>
                 </div>
                 <div className={'pt-32 h-auto w-full flex flex-col md:flex-row items-center justify-center'}>
