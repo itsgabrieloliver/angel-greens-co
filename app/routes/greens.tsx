@@ -14,6 +14,14 @@ export const meta: V2_MetaFunction = () => {
     return [
         { title: "AGCO | Our Greens" },
         { name: "description", content: "Angel Greens CO. Specializing in the highest-quality organically-grown Microgreens. Located in South Windsor, CT." },
+        {
+            "script:ld+json": {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Angel Greens Co.",
+                url: "https://angelgreens.co/",
+            },
+        },
     ]
 }
 
