@@ -1,9 +1,8 @@
-import React, {FormEvent, useRef, useState} from 'react'
 import type FC from 'react'
 import { useLocation } from 'react-router-dom'
 
 import bgImage from '../../public/bg-image.jpg'
-import AGCOLogo from '../../public/agco-logo.svg'
+import AGCOLogo from '../../public/agco-logo.png'
 import instagramLogo from '../../public/icons/instagram.svg'
 import facebookLogo from '../../public/icons/facebook.svg'
 import { Form } from "@remix-run/react"
