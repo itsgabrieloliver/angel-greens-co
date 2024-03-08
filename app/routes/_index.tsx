@@ -65,7 +65,7 @@ export default function Index() {
                     <div className={'flex flex-col px-6 md:px-0 gap-6 text-black/80'}>
                         <div className={'flex gap-6 items-center justify-start'}>
                             <icon className={'w-6 h-6 bg-cover bg-center'} style={{backgroundImage: `url(${seedlingIcon})`}}></icon>
-                            <p>Organically grown in South Windsor, CT</p>
+                            <p>Locally grown in South Windsor, CT</p>
                         </div>
                         <div className={'flex gap-6 items-center justify-start'}>
                             <icon className={'w-6 h-6 bg-cover bg-center'} style={{ backgroundImage: `url(${sprayCanIcon})` }}></icon>
