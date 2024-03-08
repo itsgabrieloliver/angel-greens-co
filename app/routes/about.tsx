@@ -4,6 +4,7 @@ import mikeWithTray from "../../public/mike-with-tray.jpg"
 import aboveShot from "../../public/above-shot.jpg"
 import setup from "../../public/setup.jpg"
 import sideShot from "../../public/side-shot.jpg"
+import briccos from '../../public/briccos.jpeg'
 
 export const meta: V2_MetaFunction = () => {
     return [
@@ -125,9 +126,10 @@ export default function About() {
 
                 <div className={'mt-24 w-full h-auto flex flex-col items-center justify-center'}>
                     <h2 className={'text-2xl font-bold'}>Photo Gallery</h2>
-                    <div className={'w-full grid grid-rows-1 md:grid-cols-2 grid-rows-1 gap-4 pt-6 px-4'}>
-                        <div className={'rounded-xl bg-[#E8E8E8] h-[30rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${setup})` }}></div>
-                        <div className={'rounded-xl bg-[#E8E8E8] h-[30rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${sideShot})` }}></div>
+                    <div className={'w-full grid grid-rows-1 md:grid-cols-3 grid-rows-1 gap-4 pt-6 px-24'}>
+                        <div className={'rounded-xl bg-[#E8E8E8] h-[24rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${briccos})` }}></div>
+                        <div className={'rounded-xl bg-[#E8E8E8] h-[24rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${setup})` }}></div>
+                        <div className={'rounded-xl bg-[#E8E8E8] h-[24rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1 bg-cover bg-center'} style={{ backgroundImage: `url(${sideShot})` }}></div>
                         {/*<div className={'rounded-xl bg-[#E8E8E8] h-[30rem] ring-1 ring-neutral-950 flex items-center justify-center col-span-1 row-span-1'}>*/}
                         {/*    Photo Here*/}
                         {/*</div>*/}
