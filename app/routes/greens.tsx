@@ -1,8 +1,6 @@
 import type { V2_MetaFunction } from '@remix-run/node'
 import Layout from "~/routes/layout"
 
-import tempProductPhoto from '../../public/temp-product-photo.svg'
-
 import broccoliPhoto from '../../public/product-photos/broccoli-photo.jpg'
 import cilantroPhoto from '../../public/product-photos/cilantro-photo.jpg'
 import dunPeasPhoto from '../../public/product-photos/dun-peas-photo.jpg'
