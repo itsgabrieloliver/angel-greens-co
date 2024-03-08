@@ -29,7 +29,7 @@ const Layout: FC = ({ children }) => {
                                 <a href="/about" className={currentUrl === '/about' ? 'text-white' : 'text-white/60 hover:text-white/80'}>About</a>
                             </li>
                             <li className={'basis-1/2 md:basis-1/4 flex justify-end items-center'}>
-                                <a href="mailto:order@angelgreens.co" className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
+                                <a href={"mailto:angelgreensco@gmail.com"} className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
                             </li>
                         </ul>
                         <div className={'h-[35rem] w-full flex items-center justify-center'}>
@@ -62,7 +62,7 @@ const Layout: FC = ({ children }) => {
                                 <a href="/about" className={currentUrl === '/about' ? 'text-white' : 'text-white/60 hover:text-white/80'}>About</a>
                             </li>
                             <li className={'basis-1/2 md:basis-1/4 flex justify-end items-center'}>
-                                <a href="/" className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
+                                <a href="mailto:angelgreensco@gmail.com" className={'uppercase text-sm font-bold text-white text-xs tracking-wide bg-[#1B1516] px-2 py-1 rounded-md'}>Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -77,7 +77,7 @@ const Layout: FC = ({ children }) => {
                     <div className={'h-full basis-2/3 flex flex-col justify-between items-start p-8'}>
                         <h2 className={'uppercase text-2xl text-white'}>Angel Greens Co.</h2>
                         <div className={'flex flex-col'}>
-                            <p className={'text-lg text-white/80'}>order@angelgreens.co</p>
+                            <a href={'mailto:angelgreensco@gmail.com'} className={'text-lg text-white/80'}>angelgreensco@gmail.com</a>
                             <p className={'text-lg text-white/80'}>(860)709-5991</p>
                         </div>
                         <div className={'flex gap-4'}>
