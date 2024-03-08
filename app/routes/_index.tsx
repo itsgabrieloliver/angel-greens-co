@@ -81,16 +81,27 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
-                <div className={'mt-4 md:py-0 h-full basis-1/2 flex flex-col items-center justify-center gap-10'}>
-                    <h3 className={'text-2xl font-bold text-[#2D240E] drop-shadow-2xl'}>Pricing Model</h3>
-                    <div className={'flex gap-4 items-end justify-center'}>
+                <div className={'py-4 h-auto basis-1/2 flex flex-col items-center justify-center gap-10'}>
+                    <h3 className={'text-2xl font-bold text-[#2D240E] drop-shadow-2xl'}>Weekly Delivery</h3>
+                    {/*<p className={'-mt-8'}>Greens delivered bi-weekly, for free, on Fridays.</p>*/}
+                    <p className={'-mt-8 w-2/3 text-center text-sm'}>Choose from the list of microgreens and we will add whichever ones you would like to your order. Deliveries are free in Connecticut and every Friday we will drop off your greens to your doorstep!</p>
+
+                    <div className={'w-[29rem] flex flex-col items-start justify-center'}>
+                        <h4 className={'text-md font-bold text-[#2D240E] drop-shadow-2xl'}>Pricing</h4>
+                        <p className={'text-sm'}>For all of our selection</p>
+                    </div>
+                    <div className={'-mt-8 flex gap-4 items-end justify-center'}>
                         <div className={'rounded-xl bg-[#4E8068] w-[8rem] h-[10rem] flex flex-col items-center justify-center'}>
-                            <h4 className={'text-2xl text-white font-bold'}>1 OZ</h4>
-                            <h5 className={'text-lg text-white/80'}>$5.00</h5>
+                            <h4 className={'text-2xl text-white font-bold'}>4 OZ</h4>
+                            <h5 className={'text-lg text-white/80'}>$12.00</h5>
                         </div>
-                        <div className={'rounded-xl bg-[#4E8068] w-[8rem] h-[13rem] flex flex-col items-center justify-center'}>
-                            <h4 className={'text-2xl text-white font-bold'}>2 OZ</h4>
-                            <h5 className={'text-lg text-white/80'}>$10.00</h5>
+                        <div className={'rounded-xl bg-[#4E8068] w-[9rem] h-[12rem] flex flex-col items-center justify-center'}>
+                            <h4 className={'text-2xl text-white font-bold'}>6 OZ</h4>
+                            <h5 className={'text-lg text-white/80'}>$15.00</h5>
+                        </div>
+                        <div className={'rounded-xl bg-[#4E8068] w-[10rem] h-[14rem] flex flex-col items-center justify-center'}>
+                            <h4 className={'text-2xl text-white font-bold'}>8 OZ</h4>
+                            <h5 className={'text-lg text-white/80'}>$20.00</h5>
                         </div>
                     </div>
                 </div>
