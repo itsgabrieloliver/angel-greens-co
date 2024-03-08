@@ -1,8 +1,8 @@
 import type { V2_MetaFunction } from '@remix-run/node'
 import Layout from "~/routes/layout"
 
-import spicySaladMixPhoto from '../../public/product-photos/spicy-salad-mix-photo.jpg'
-import broccoliPhoto from '../../public/product-photos/broccoli-photo.jpg'
+import cilantroPhoto from '../../public/product-photos/cilantro-photo.jpg'
+import peaShootsPhoto from '../../public/product-photos/dun-peas-photo.jpg'
 import mildSaladMixPhoto from '../../public/product-photos/mild-salad-mix-photo.jpeg'
 
 import sprayCanIcon from '../../public/icons/spray-can-solid.svg'
@@ -22,25 +22,22 @@ export default function Index() {
         <Layout>
             <div className={'h-[25rem] w-full flex flex-col gap-20 items-center justify-center'}>
                 <h3 className={'text-2xl font-bold text-[#4E8068] drop-shadow-2xl'}>Featured Greens</h3>
-                <div className={'w-full h-auto flex items-center justify-center gap-4'}>
+                <div className={'w-full h-auto flex items-center justify-center gap-6'}>
                     <a href={'/greens'} className={'basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl flex flex-col items-center'}>
-                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${spicySaladMixPhoto})` }}>
-
+                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover flex items-end justify-center'} style={{ backgroundImage: `url(${cilantroPhoto})` }}>
                         </div>
-                        <p className={'text-white text-2xl font-bold p-4'}>Spicy Salad Mix</p>
-                    </a>
-                    <a href={'/greens'} className={'hidden md:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl md:flex md:flex-col md:items-center'}>
-                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${broccoliPhoto})` }}>
-
-                        </div>
-                        <p className={'text-white text-2xl font-bold p-4'}>Broccoli</p>
-
+                        <p className={'text-white text-2xl font-bold p-4'}>Cilantro Leasure Split</p>
                     </a>
                     <a href={'/greens'} className={'hidden xl:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl xl:flex xl:flex-col xl:items-center'}>
-                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover'} style={{ backgroundImage: `url(${mildSaladMixPhoto})` }}>
-
+                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover flex items-end justify-center'} style={{ backgroundImage: `url(${mildSaladMixPhoto})` }}>
                         </div>
                         <p className={'text-white text-2xl font-bold p-4'}>Mild Salad Mix</p>
+                    </a>
+                    <a href={'/greens'} className={'hidden md:basis-[20rem] bg-gradient-to-tr from-[#4E8068] to-[#349E6B] rounded-xl md:flex md:flex-col md:items-center'}>
+                        <div className={'ring-2 ring-white rounded-xl shadow-2xl -mt-12 h-[10rem] w-[10rem] bg-center bg-cover flex items-end justify-center'} style={{ backgroundImage: `url(${peaShootsPhoto})` }}>
+                        </div>
+                        <p className={'text-white text-2xl font-bold p-4'}>Speckled Pea Shoots</p>
+
                     </a>
                 </div>
                 <a href={'/greens'} className={'-mt-12 font-bold text-black/60 hover:text-black/80'}>View All Greens</a>
