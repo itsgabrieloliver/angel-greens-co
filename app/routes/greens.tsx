@@ -33,7 +33,7 @@ export default function Greens() {
                     <h3 className={'text-2xl font-bold text-[#4E8068] drop-shadow-2xl'}>Our Greens</h3>
                     <p>Explore our delicious variety.</p>
                 </div>
-                <div className={'w-full h-auto grid grid-cols-1 md:grid-cols-4 grid-rows-2 p-4 md:p-20 gap-x-6 gap-y-4'}>
+                <div className={'w-full h-auto grid grid-cols-1 md:grid-cols-4 grid-rows-2 p-4 xl:p-10 lg:p-6 gap-x-6 gap-y-4'}>
                     <div className={'h-auto row-span-1 col-span-1 bg-[#2D240E] rounded-xl p-1'}>
                         <div className={'h-[14rem] rounded-md w-full bg-center bg-cover'} style={{ backgroundImage: `url(${cilantroPhoto})` }}></div>
                         <div className={'p-4 text-white flex flex-col gap-3'}>
