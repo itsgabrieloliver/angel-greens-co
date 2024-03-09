@@ -131,7 +131,7 @@ export default function Greens() {
                         <div className={'h-[14rem] rounded-md w-full bg-center bg-cover'} style={{ backgroundImage: `url(${arugulaPhoto})` }}></div>
                         <div className={'p-4 text-white flex flex-col gap-3'}>
                             <div className={'flex gap-2'}>
-                                <h2 className={'text-lg font-medium'}>Arugula Snow Bolt</h2>
+                                <h2 className={'text-lg font-medium'}>Arugula Slow Bolt</h2>
                                 <p className={'bg-[#4E8068] flex items-center justify-center rounded-full px-2 py-0 text-sm'}>Our Favorite!</p>
                             </div>
                             <div className={'flex items-center justify-start gap-1.5'}>
